@@ -171,6 +171,10 @@ nms.run();
 ```
 
 Node Media Server v2.1.9
+
 Node Media Rtmp Server started on port: 1935
+
 Node Media Http Server started on port: 8000
+
 Node Media WebSocket Server started on port: 8000
+
