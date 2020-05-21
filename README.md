@@ -121,3 +121,56 @@ obs-studio
    or OBS Studio Ubuntu using Ubuntu Software-GUIs
    
 ![image](./docs/obs-select.png)
+
+
+###### Customize OBS Stream
+
+```
+SETTINGS => Stream
+
+STREAM TYPE => Custom Streaming Server
+
+URL => rtmp://localhost/live
+
+STREAM KEY => 1 (for the stream with ID:1)
+
+CLOSE SETTINGS
+
+PRESS THE BUTTON => Start Streaming
+
+```
+
+RESULT: [http://localhost:3000/streams/1](http://localhost:3000/streams/1)
+
+
+###### Run Node Media Server
+
+```
+node index.js
+```
+
+```
+const NodeMediaServer = require('node-media-server');
+
+const config = {
+    rtmp: {
+        port: 1935,
+        chunk_size: 60000,
+        gop_cache: true,
+        ping: 30,
+        ping_timeout: 60
+    },
+    http: {
+        port: 8000,
+        allow_origin: '*'
+    }
+};
+
+var nms = new NodeMediaServer(config)
+nms.run();
+```
+
+Node Media Server v2.1.9
+Node Media Rtmp Server started on port: 1935
+Node Media Http Server started on port: 8000
+Node Media WebSocket Server started on port: 8000
