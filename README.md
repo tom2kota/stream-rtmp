@@ -178,3 +178,9 @@ Node Media Http Server started on port: 8000
 
 Node Media WebSocket Server started on port: 8000
 
+
+### Deploy
+
+Heroku support says that they only allow 80 and 443 HTTP/S ports and they do not officially support RTMP. 
+I'm probably going to opt for Docker + AWS. 
+
