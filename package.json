@@ -1,0 +1,25 @@
+{
+  "name": "rtmpserver",
+  "version": "1.0.0",
+  "description": "Real Time Messaging Protocol Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tom2kota/stream-rtmp.git"
+  },
+  "keywords": [
+    "rtmp"
+  ],
+  "author": "Tom Kota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tom2kota/stream-rtmp/issues"
+  },
+  "homepage": "https://github.com/tom2kota/stream-rtmp#readme",
+  "dependencies": {
+    "node-media-server": "^2.1.9"
+  }
+}
